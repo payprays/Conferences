@@ -1,0 +1,60 @@
+name: Daily Upstream Sync and Normalize
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-and-normalize:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Sync from Upstream
+        env:
+          # REPLACE WITH THE ACTUAL UPSTREAM REPOSITORY URL
+          UPSTREAM_URL: https://github.com/UPSTREAM_USER/UPSTREAM_REPO.git
+          UPSTREAM_BRANCH: main 
+        run: |
+          # Only attempt sync if UPSTREAM_URL is not the placeholder
+          if [[ "$UPSTREAM_URL" == *"UPSTREAM_USER"* ]]; then
+            echo "Upstream URL not configured. Skipping sync."
+          else
+            echo "Syncing from $UPSTREAM_URL..."
+            git remote add upstream "$UPSTREAM_URL" || git remote set-url upstream "$UPSTREAM_URL"
+            git fetch upstream
+            git merge upstream/$UPSTREAM_BRANCH --allow-unrelated-histories
+          fi
+
+      - name: Normalize Directory Names
+        run: |
+          python3 scripts/normalize_dirs.py
+
+      - name: Commit and Push Changes
+        run: |
+          # Check for changes
+          if [[ -n $(git status -s) ]]; then
+            git add .
+            git commit -m "Auto-normalize directory names [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
