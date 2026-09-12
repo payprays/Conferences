@@ -1,100 +1,57 @@
-name: Weekly Upstream Sync and Release
+name: Upstream Sync and Normalize
 
 on:
   schedule:
     # Run weekly at 00:00 UTC on Monday
-    - cron: '0 0 * * 1'
+    - cron: "0 0 * * 1"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  sync-and-release:
+  sync-and-normalize:
+    if: github.actor != "github-actions[bot]"
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Configure Git
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Capture Start State
-        id: start_state
-        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Sync from Upstream
-        env:
-          # REPLACE WITH THE ACTUAL UPSTREAM REPOSITORY URL
-          UPSTREAM_URL: https://github.com/UPSTREAM_USER/UPSTREAM_REPO.git
-          UPSTREAM_BRANCH: main 
         run: |
-          if [[ "$UPSTREAM_URL" == *"UPSTREAM_USER"* ]]; then
-            echo "Upstream URL not configured. Skipping sync step."
-          else
-            echo "Syncing from $UPSTREAM_URL..."
-            git remote add upstream "$UPSTREAM_URL" || git remote set-url upstream "$UPSTREAM_URL"
-            git fetch upstream
-            # Merge upstream changes. This creates a commit if there are changes.
-            git merge upstream/$UPSTREAM_BRANCH --allow-unrelated-histories || echo "Merge conflict or no changes"
-          fi
+          git remote add upstream https://github.com/onhexgroup/Conferences.git || git remote set-url upstream https://github.com/onhexgroup/Conferences.git
+          git fetch upstream
+          git merge upstream/main -X theirs --allow-unrelated-histories -m "Merge upstream changes" || echo "Already up to date or merge completed"
 
       - name: Normalize Directory Names
         run: |
           python3 scripts/normalize_dirs.py
 
-      - name: Commit Normalization Changes
+      - name: Commit and Push Changes
         run: |
-          git add .
+          git add -A
           if [[ -n $(git status -s) ]]; then
             git commit -m "Auto-normalize directory names [skip ci]"
-          fi
-
-      - name: Push and Release
-        id: finish
-        run: |
-          START_SHA="${{ steps.start_state.outputs.sha }}"
-          CURRENT_SHA=$(git rev-parse HEAD)
-          
-          if [[ "$START_SHA" != "$CURRENT_SHA" ]]; then
-            echo "Changes detected (Upstream or Normalization)."
-            git push
-            
-            # Create Tag
-            TAG_NAME="v$(date +'%Y.%m.%d')"
-            # Handle collision if multiple runs per day?
-            if git rev-parse "$TAG_NAME" >/dev/null 2>&1; then
-               TAG_NAME="${TAG_NAME}-$(date +'%H%M')"
-            fi
-            
-            echo "Creating tag $TAG_NAME"
-            git tag "$TAG_NAME"
-            git push origin "$TAG_NAME"
-            echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
-            echo "released=true" >> $GITHUB_OUTPUT
+            git push origin main
           else
-            echo "No changes detected."
-            echo "released=false" >> $GITHUB_OUTPUT
+            echo "Directory structure is already up-to-date."
           fi
 
-      - name: Create GitHub Release
-        if: steps.finish.outputs.released == 'true'
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ steps.finish.outputs.tag_name }}
-          name: Weekly Release ${{ steps.finish.outputs.tag_name }}
-          body: |
-            Automated weekly sync and normalization release.
-            Changes synced from upstream and/or directory normalization.
-          draft: false
-          prerelease: false
+      - name: Keepalive Workflow
+        uses: gautamkrishnar/keepalive-workflow@v2
