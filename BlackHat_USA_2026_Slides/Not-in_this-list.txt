@@ -1,0 +1,222 @@
+Netanel Rubin&Dan Avraham_Bye Bye AI: How We Hacked the AI Shopping Assistant of a Top 3 US Retailer
+
+https://blackhat.com/us-26/briefings/schedule/index.html#bye-bye-ai-how-we-hacked-the-ai-shopping-assistant-of-a-top-3-us-retailer-53360
+
+
+Akash Parasumanna Sridhar_Detection Engineering Beyond the Inbox
+
+https://blackhat.com/us-26/briefings/schedule/index.html#detection-engineering-beyond-the-inbox-51761
+
+
+Peiter Mudge Zatko_Thinking Beyond the Code: Contrarian Thinking to AI and Lessons From a Life in Discovery
+
+https://blackhat.com/us-26/briefings/schedule/index.html#thinking-beyond-the-code-contrarian-thinking-to-ai-and-lessons-from-a-life-in-discovery-56218
+
+
+
+Wei-Chieh Chao&Zhao-Min Chen_A Front-Row Seat to APT Operations: How OPSEC Failures Exposed a Malware Supplier
+
+https://blackhat.com/us-26/briefings/schedule/index.html#a-front-row-seat-to-apt-operations-how-opsec-failures-exposed-a-malware-supplier-51877
+
+
+
+Morgan Adamski&Fotios (Fotis) Chantzis&Sergiy Konovalov&Katie Moussouris&Michael Sulmeyer_AI and the Future of Cyber Defense Panel
+
+https://blackhat.com/us-26/briefings/schedule/index.html#ai-and-the-future-of-cyber-defense-panel-55782
+
+
+
+James Kettle_Can AI Do Novel Security Research? Meet the HTTP Terminator
+
+https://blackhat.com/us-26/briefings/schedule/index.html#can-ai-do-novel-security-research-meet-the-http-terminator-51894
+
+
+
+Fred Heiding&Chris Inglis_The Good, the Bad, and the Ugly of AI Security
+
+https://blackhat.com/us-26/briefings/schedule/index.html#the-good-the-bad-and-the-ugly-of-ai-security-53252
+
+
+
+Michael Dalton&Eric Wallace_The 'Breaking' News: The OpenAI–Hugging Face Incident - A Technical Reconstruction and Its Implications for AI
+
+https://blackhat.com/us-26/briefings/schedule/index.html#the-breaking-news--the-openaihugging-face-incident---a-technical-reconstruction-and-its-implications-for-ai-57401
+
+
+
+Brett Leatherman&Paul Foster_Anatomy of a Takedown: Inside the Operation That Broke LockBit
+
+https://blackhat.com/us-26/briefings/schedule/index.html#anatomy-of-a-takedown-inside-the-operation-that-broke-lockbit-55613
+
+
+
+Simcha Kosman_A Billion-User Blast Radius: Owning ChatGPT's Secure Sandbox
+
+https://blackhat.com/us-26/briefings/schedule/index.html#a-billion-user-blast-radius-owning-chatgpts-secure-sandbox-53432
+
+
+
+
+HD Moore_Lights Out: BMCs Are Still Broken and Now We Have the Receipts
+
+
+https://blackhat.com/us-26/briefings/schedule/index.html#lights-out-bmcs-are-still-broken-and-now-we-have-the-receipts-53926
+
+
+
+
+
+Michael Bargury&Stav Cohen&João Maria Campos Donato&Raul Onitza-Klugman&Tamir Ishay Sharbat_Pwning Agentic Browsers with PleaseFix: A New Vulnerability Class for 0-Click Takeover
+
+https://blackhat.com/us-26/briefings/schedule/index.html#pwning-agentic-browsers-with-pleasefix-a-new-vulnerability-class-for-0-click-takeover-53888
+
+
+
+
+Vangelis Stykas_Running Untrusted Code: An Empirical Study of Developer Compromise and Its Blast Radius
+
+https://blackhat.com/us-26/briefings/schedule/index.html#running-untrusted-code-an-empirical-study-of-developer-compromise-and-its-blast-radius-53784
+
+
+
+
+
+
+Caleb Gross_Sift or Get Off the PoC: Applying Information Retrieval to Vulnerability Research
+
+https://blackhat.com/us-26/briefings/schedule/index.html#sift-or-get-off-the-poc-applying-information-retrieval-to-vulnerability-research-52775
+
+
+
+Gal Elbaz&Avi Lumelsky_When AI Attacks AI: Inside the Self-Propagating Botnet Built on Compromised AI Infrastructure
+
+
+https://blackhat.com/us-26/briefings/schedule/index.html#when-ai-attacks-ai-inside-the-self-propagating-botnet-built-on-compromised-ai-infrastructure-53398
+ 
+
+
+
+Bill Swearingen_Could a Pattern on Your Clothing Fool Facial Recognition?
+
+https://blackhat.com/us-26/briefings/schedule/index.html#could-a-pattern-on-your-clothing-fool-facial-recognition-53532
+
+
+
+Ben Hanson_You Can't Patch a Mental Model: How Agentic Systems Expose our Hidden Security Assumptions
+
+https://blackhat.com/us-26/briefings/schedule/index.html#you-cant-patch-a-mental-model--how-agentic-systems-expose-our-hidden-security-assumptions-52854
+
+
+
+
+Daniël Trujillo&Mengjia Yan_Breaking Recently Deployed Spectre v2 Mitigations: A Novel Attack Primitive
+
+https://blackhat.com/us-26/briefings/schedule/index.html#breaking-recently-deployed-spectre-v2-mitigations-a-novel-attack-primitive-53157
+
+
+
+Jayson Grace&Martin Wendiggensen&Shane Caldwell_Catch Me If You Can: AI Investigators Hunting Autonomous Attackers as a Benchmark
+
+https://blackhat.com/us-26/briefings/schedule/index.html#catch-me-if-you-can-ai-investigators-hunting-autonomous-attackers-as-a-benchmark-53869
+
+
+Yuval Avrahami&Lior Maman_One Key to Rule Them All: Taking Over a Flagship Cloud Service
+
+https://blackhat.com/us-26/briefings/schedule/index.html#one-key-to-rule-them-all-taking-over-a-flagship-cloud-service-53889
+
+
+Tobias Scharnowski&Kristian Covic_Pedal to the Bare Metal: Rehosting and Fuzzing the Tesla Wall Connector to Start a Worm
+
+ https://blackhat.com/us-26/briefings/schedule/index.html#pedal-to-the-bare-metal-rehosting-and-fuzzing-the-tesla-wall-connector-to-start-a-worm-53752
+ 
+ 
+ 
+Jesse D'Aguanno_Can't Touch This: Attacking Fingerprint Systems from Sensor to OS
+ 
+https://blackhat.com/us-26/briefings/schedule/index.html#cant-touch-this-attacking-fingerprint-systems-from-sensor-to-os-53691
+
+
+
+
+
+Vangelis Stykas&Felipe Solferini_Tracking the Trackers: How We Took Over 36 Million GPS Devices Protecting Children & Vehicles
+
+
+https://blackhat.com/us-26/briefings/schedule/index.html#tracking-the-trackers-how-we-took-over-36-million-gps-devices-protecting-children-amp-vehicles-53455
+
+
+
+Matthias Frielingsdorf_Inside Coruna and DarkSword - iOS Exploits Caught in the Wild
+
+https://blackhat.com/us-26/briefings/schedule/index.html#inside-coruna-and-darksword---ios-exploits-caught-in-the-wild-54085
+
+
+
+Francesco Montorsi&Lana Salameh&Roey Ben Chaim&Michael Bargury&Tamir Ishay Sharbat_Promptware EOD: Skillful Agent Detonation
+
+https://blackhat.com/us-26/briefings/schedule/index.html#promptware-eod-skillful-agent-detonation-53921
+
+
+Neil (Grifter) Wyler&Bart Stump_The 12th Annual Black Hat USA Network Operations Center (NOC) Report
+
+https://blackhat.com/us-26/briefings/schedule/index.html#the-12th-annual-black-hat-usa-network-operations-center-noc-report-56322
+
+
+ 
+Luca Cremona&Alessandro Di Pinto&Gabriele Quagliarella_Deterministic Chaos - Exploiting and Securing Predictable Timing in TSN Industrial Networks (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#deterministic-chaos---exploiting-and-securing-predictable-timing-in-tsn-industrial-networks-on-demand-only-51885
+
+
+XiLong Zhang&HaiShan Li_Exploring the EL2 Attack Surface: From Vulnerability to Full System Compromise (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#exploring-the-el2-attack-surface-from-vulnerability-to-full-system-compromise-on-demand-only-51679
+
+
+Minhal Cheng&Abbie Zhou&Adam Zhang&Revan Zhang_From 8 Bytes to Full Compromise: AI-Assisted Exploitation of a Widespread USB Flaw in a Multi-SE Hardware Wallet (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#from-8-bytes-to-full-compromise-ai-assisted-exploitation-of-a-widespread-usb-flaw-in-a-multi-se-hardware-wallet-on-demand-only-52311
+
+
+Aleksandr Krasnov_Ghost Credentials: Hunting and Exploiting NonHuman Identities Across Cloud Environments (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#ghost-credentials-hunting-and-exploiting-nonhuman-identities-across-cloud-environments-on-demand-only-52818
+
+
+SttyK SttyK_Inside the Screen: Deep-Diving into North Korean IT Workers' Live Infrastructure (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#inside-the-screen-deep-diving-into-north-korean-it-workers-live-infrastructure-on-demand-only-51689
+
+
+Shantanu Shastri_Medical Device Kill Chain: From Debug Port to Patient Impact (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#medical-device-kill-chain-from-debug-port-to-patient-impact-on-demand-only-53506
+
+
+Christopher Domas_Spaghettifying DRAM: Breaking Everything with Memory Collision Exploitation (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#spaghettifying-dram-breaking-everything-with-memory-collision-exploitation-on-demand-only-54024
+
+
+Justin OLeary_Trust No Deputy: Breaking Azure and GCP Through Managed Identity Chains (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#trust-no-deputy-breaking-azure-and-gcp-through-managed-identity-chains-on-demand-only-54780
+
+
+Cyfun_When BPF Blinding Goes Dark: Smuggling Raw Gadgets into the Linux Kernel (ON-DEMAND ONLY)
+
+https://blackhat.com/us-26/briefings/schedule/index.html#when-bpf-blinding-goes-dark-smuggling-raw-gadgets-into-the-linux-kernel-on-demand-only-52484
+
+
+
+
+
+
+
+
+
+
+
+
+
+
